@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {ProductData} from "../../data/ProductData";
+import {ProductData} from "../data/ProductData";
 
 @Component({
   selector: "list-products",

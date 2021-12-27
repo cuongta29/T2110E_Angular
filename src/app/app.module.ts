@@ -8,12 +8,11 @@ import {StudentComponent} from "./student/student.component";
 import {ListproductComponent} from "./listproduct/listproduct.component";
 import {ProductComponent} from "./product/product.component";
 import {FormsModule} from "@angular/forms";
-
 @NgModule({
   declarations: [
     AppComponent,
     DemoComponent,ClassroomComponent,StudentComponent,
-    ListproductComponent, ProductComponent
+    ListproductComponent, ProductComponent,
   ],
   imports: [
     BrowserModule, FormsModule
