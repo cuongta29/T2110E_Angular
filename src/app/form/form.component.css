@@ -1,0 +1,77 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: deepskyblue;
+}
+.container{
+  width: 600px;
+  height: 800px;
+  margin: 150px auto;
+  background-color: antiquewhite;
+}
+.header{
+  height: 20%;
+  width: 100%;
+  background-color: #702c91;
+}
+.logo{
+  width: 20%;
+  margin: 0 auto;
+}
+.logo figure figcaption{
+  color: white;
+  font-weight: 800;
+  font-size: 30px;
+}
+.logo figure img{
+  position: relative;
+  left: 20px;
+}
+.form{
+  padding: 30px 15px 20px 15px;
+}
+.input{
+  height: 65px;
+  font-size: 24px;
+  background-color: #dcd7d7;
+  position: relative;
+  top: -24px;
+  left: -2px;
+  border: none;
+  width: 80%;
+  text-indent: 20px;
+  margin-top: 20px;
+}
+.checkbox{
+  width: 30px;
+  height: 30px;
+}
+.dongy{
+  margin:0 auto;
+  font-size: 24px;
+  width: 80%;
+}
+.checkbox{
+  position: relative;
+  top: 5px;
+}
+.signup{
+  background-color: #702c91;
+  color: white;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.login{
+  font-size: 23px;
+  text-align: center;
+  margin-top: 20px;
+}
+.login a{
+  text-decoration: none;
+}

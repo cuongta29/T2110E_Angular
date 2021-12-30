@@ -1,21 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {DemoComponent} from "./demoAngular/demo.component";
-import {ClassroomComponent} from "./classroom/classroom.component";
-import {StudentComponent} from "./student/student.component";
-import {ListproductComponent} from "./listproduct/listproduct.component";
-import {ProductComponent} from "./product/product.component";
+import { StudentComponent } from './student/student.component';
+import { ClassroomComponent } from './classroom/classroom.component';
+import { NewCmpComponent } from './new-cmp/new-cmp.component';
+import { AddTextDirective } from './add-text.directive';
 import {FormsModule} from "@angular/forms";
+import{InputEmailComponent} from "./input-email/input-email.component";
+import {InputPasswordComponent} from "./input-password/input-password.component";
+import {FormComponent} from "./form/form.component";
+import {InputUsernameComponent} from "./input-username/input-username.component";
+import { InputRepasswordComponent } from './input-repassword/input-repassword.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DemoComponent,ClassroomComponent,StudentComponent,
-    ListproductComponent, ProductComponent,
+    StudentComponent,
+    ClassroomComponent,
+    NewCmpComponent,
+    AddTextDirective,
+    InputEmailComponent,
+    InputPasswordComponent,
+    FormComponent,
+    InputUsernameComponent,
+    InputRepasswordComponent
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule, FormsModule, AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'T2110E-Angular';
+  months=["January", "February", "March", "April", "May", "June", "July",
+    "August", "September", "October", "November", "December"];
+  showage=false;
 }

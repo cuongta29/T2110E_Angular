@@ -1,0 +1,12 @@
+.input{
+  height: 65px;
+  font-size: 24px;
+  background-color: #dcd7d7;
+  position: relative;
+  top: -24px;
+  left: -2px;
+  border: none;
+  width: 80%;
+  text-indent: 20px;
+  margin-top: 20px;
+}
