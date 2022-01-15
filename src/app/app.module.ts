@@ -18,6 +18,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import {RouterModule, Routes} from "@angular/router";
 import { FirstPageComponent } from './first-page/first-page.component';
+import {Listproduct2Component} from "./component/listproduct/listproduct2.component";
+import {CreateProductComponent} from "./component/create-product/create-product.component";
 const AppRouters: Routes=[
   {path:"", component:GetStartedComponent},
   {path:"login",component:LoginComponent},
@@ -40,6 +42,8 @@ const AppRouters: Routes=[
     LoginComponent,
     RegisterComponent,
     FirstPageComponent,
+    Listproduct2Component,
+    CreateProductComponent
   ],
   imports: [
     BrowserModule, FormsModule, AppRoutingModule,

@@ -1,0 +1,63 @@
+<div class="m-4" style="background-color: lightblue; height: 50px">
+  <p>Current User: Test@Test.com</p>
+</div>
+<div class="m-4">
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+    Add Product
+  </button>
+
+</div>
+<table class="table table-bordered m-4">
+  <thead>
+  <tr>
+    <th scope="col"></th>
+    <th scope="col">Product Name</th>
+    <th scope="col">Product Price</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let product of products">
+    <th scope="row">
+      <a>
+        <i  class="fas fa-edit"></i>
+      </a>
+      |
+      <a (click)="deleteProduct(product.productName)">
+        <i style="color: red" class="fas fa-trash"></i>
+      </a>
+    </th>
+    <td>{{product.productName}}</td>
+    <td>{{product.productPrice}}</td>
+  </tr>
+  </tbody>
+</table>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form >
+          <div class="form-group">
+            <label for="exampleInputEmail1">Product Name</label>
+            <input  type="text" class="form-control" aria-describedby="emailHelp" placeholder="Product Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Product price</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Product price">
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button (click)="addProduct()" type="button" class="btn btn-secondary" data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
