@@ -13,6 +13,17 @@ import {InputPasswordComponent} from "./input-password/input-password.component"
 import {FormComponent} from "./form/form.component";
 import {InputUsernameComponent} from "./input-username/input-username.component";
 import { InputRepasswordComponent } from './input-repassword/input-repassword.component';
+import { GetStartedComponent } from './get-started/get-started.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import {RouterModule, Routes} from "@angular/router";
+import { FirstPageComponent } from './first-page/first-page.component';
+const AppRouters: Routes=[
+  {path:"", component:GetStartedComponent},
+  {path:"login",component:LoginComponent},
+  {path:"register",component:RegisterComponent}
+
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +35,11 @@ import { InputRepasswordComponent } from './input-repassword/input-repassword.co
     InputPasswordComponent,
     FormComponent,
     InputUsernameComponent,
-    InputRepasswordComponent
+    InputRepasswordComponent,
+    GetStartedComponent,
+    LoginComponent,
+    RegisterComponent,
+    FirstPageComponent,
   ],
   imports: [
     BrowserModule, FormsModule, AppRoutingModule,

@@ -1,0 +1,29 @@
+<div class="form">
+  <input  type="text" [(ngModel)]="fullname" placeholder="Full Name"/><br/>
+  <input type="email" [(ngModel)]="email" placeholder="Email"/><br/>
+  <label>Giới tính</label><br/>
+  <input type="radio" [(ngModel)]="gender" value="Male"/> Male
+  <input type="radio" [(ngModel)]="gender" value="Female"/> FeMale<br/>
+  <input type="date" [(ngModel)]="birthday"/><br/>
+  <button type="button" (click)="add()">Submit</button>
+</div>
+<div class="dislay">
+  <div class="name">
+    <p> Họ và tên</p>
+    <div *ngFor="let na of names">{{na}}</div>
+  </div>
+  <div  class="email">
+    <p>Email</p>
+    <div *ngFor="let em of emails">{{em}}</div>
+  </div>
+  <div  class="gender">
+    <p>Giới tính</p>
+    <div *ngFor="let gd of genders">{{gd}}</div>
+  </div>
+  <div  class="birt">
+    <p>Sinh nhật</p>
+    <div *ngFor="let bt of birthdays">{{bt}}</div>
+  </div>
+</div>
+
+
